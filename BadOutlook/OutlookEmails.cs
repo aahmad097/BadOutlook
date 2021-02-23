@@ -31,16 +31,17 @@ namespace BadOutlook
                 inboxFolder = outlookNamespace.GetDefaultFolder(OlDefaultFolders.olFolderInbox);
                 mailItems = inboxFolder.Items;
 
-                foreach (MailItem item in mailItems)
+                foreach (Object item in mailItems)
                 {
-
-                    emailDetails = new OutlookEmails();
-                    emailDetails.EmailFrom = item.SenderEmailAddress;
-                    emailDetails.EmailSubject = item.Subject;
-                    emailDetails.EmailBody = item.Body;
-                    listEmailDetails.Add(emailDetails);
-                    ReleaseComObject(item);
-
+                    if (item is MailItem)
+                    {
+                        emailDetails = new OutlookEmails();
+                        emailDetails.EmailFrom = ((MailItem) item).SenderEmailAddress;
+                        emailDetails.EmailSubject = ((MailItem)item).Subject;
+                        emailDetails.EmailBody = ((MailItem)item).Body;
+                        listEmailDetails.Add(emailDetails);
+                        ReleaseComObject(item);
+                    }
                 }
 
             }
