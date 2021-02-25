@@ -13,3 +13,19 @@ Building on the millions of pre-existing C# shellcode loaders, an email with a t
     - Minor testing showed that Injecting this process into an Outlook client does not cause the alert to appear (Additional testing would be much appriciated <3)
 
 ## PoC
+
+Applicaiton Polling Outlook for Trigger
+
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/Checks.png)
+
+Trigger Email With Shellcode Creation
+
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/EmailGeneration.png)
+
+Email Recived By Outlook Client
+
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/EmailRecived.png)
+
+Shellcode Execution by BadOutlook Application
+
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/Trigger.png)
