@@ -16,16 +16,16 @@ Building on the millions of pre-existing C# shellcode loaders, an email with a t
 
 Applicaiton Polling Outlook for Trigger
 
-![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/Checks.png)
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/PoC/Checks.png)
 
 Trigger Email With Shellcode Creation
 
-![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/EmailGeneration.png)
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/PoC/EmailGeneration.png)
 
 Email Recived By Outlook Client
 
-![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/EmailRecived.png)
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/PoC/EmailReceived.png)
 
 Shellcode Execution by BadOutlook Application
 
-![system schema](https://github.com/S4R1N/BadOutlook/blob/master/BadOutlook/PoC/Trigger.png)
+![system schema](https://github.com/S4R1N/BadOutlook/blob/master/PoC/Trigger.png)
