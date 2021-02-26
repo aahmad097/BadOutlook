@@ -9,7 +9,7 @@ Building on the millions of pre-existing C# shellcode loaders, an email with a t
 ## Additional Notes:
 - This can be used to build an Entire C2 Framework that relies on E-Mails as a mean of communication (Where the Implant never speaks to the internet directly)
 - There does appear to be a security warning which informs the user of an application attempting to access Outlook data
-    - This can be turned off with when an administrator modifies via [registry.](https://docs.microsoft.com/en-us/outlook/troubleshoot/security/a-program-is-trying-to-send-an-email-message-on-your-behalf)
+    - This can be turned off with when an administrator modifies the registry [as shown here.](https://docs.microsoft.com/en-us/outlook/troubleshoot/security/a-program-is-trying-to-send-an-email-message-on-your-behalf)
     - Minor testing showed that Injecting this process into an Outlook client does not cause the alert to appear (Additional testing would be much appriciated <3)
 
 ## PoC
