@@ -1,5 +1,7 @@
 # Bad Outlook
 
+Author: S4R1N
+
 A simple PoC which leverages the Outlook Application Interface (COM Interface) to execute shellcode on a system based on a specific trigger subject line. 
 
 By utilizing the `Microsoft.Office.Interop.Outlook` namespace, developers can represent the entire Outlook Application (or at least according to [Microsoft](https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.outlook.application?view=outlook-pia)). This means that the new application should  be able to do anything from reading emails (yes this also includes archives, trash, etc.) to sending them out.
